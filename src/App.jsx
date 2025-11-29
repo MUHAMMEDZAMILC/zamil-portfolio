@@ -567,7 +567,6 @@ const App = () => {
       <footer className="py-12 px-6 border-t border-gray-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500">© 2025 MUHAMMED ZAMIL C</p>
-          <p className="text-gray-500 mt-4 md:mt-0">BUILT WITH REACT & FRAMER MOTION</p>
         </div>
       </footer>
     </div>
