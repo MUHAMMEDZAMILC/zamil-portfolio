@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import HeroSection from './components/HeroSection';
+import HeroSectionNew from './components/HeroSectionNew';
 import AboutSection from './components/AboutSection';
 import StatsSection from './components/StatsSection';
 import ExperienceSection from './components/ExperienceSection';
@@ -42,7 +43,7 @@ const App = () => {
       />
 
       {/* All Sections */}
-      <HeroSection />
+      <HeroSectionNew />
       <AboutSection />
       <StatsSection />
       <ExperienceSection />

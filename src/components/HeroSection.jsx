@@ -38,27 +38,27 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            SENIOR FLUTTER DEVELOPER
+            FLUTTER DEVELOPER
           </motion.p>
 
-          <h1 className="text-6xl md:text-9xl lg:text-[8rem] leading-none mb-8">
+          <h1 className="text-6xl md:text-9xl lg:text-[12rem] leading-none mb-8 tracking-wider" style={{ fontFamily: 'Heathergreen, cursive' }}>
             <motion.span
               className="inline-block"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
             >
-              Muhammed
+              MUHAMMED ZAMIL
             </motion.span>
-            <br />
+            {/* <br />
             <motion.span
               className="inline-block"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              Zamil
-            </motion.span>
+              
+            </motion.span> */}
           </h1>
 
           <motion.p
@@ -79,7 +79,7 @@ const HeroSection = () => {
           >
             <a
               href="#projects"
-              className="group relative px-12 py-4 bg-white text-black font-bold overflow-hidden"
+              className="group relative w-48 h-14 flex items-center justify-center bg-white text-black font-bold overflow-hidden"
             >
               <span className="relative z-10">VIEW WORK</span>
               <motion.div
@@ -94,14 +94,14 @@ const HeroSection = () => {
               href="/assets/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-12 py-4 border-2 border-white font-bold hover:bg-white hover:text-black transition-colors"
+              className="w-48 h-14 flex items-center justify-center border-2 border-white font-bold hover:bg-white hover:text-black transition-colors"
             >
               VIEW RESUME
             </a>
 
             <a
               href="#contact"
-              className="px-12 py-4 border-2 border-white font-bold hover:bg-white hover:text-black transition-colors"
+              className="w-48 h-14 flex items-center justify-center border-2 border-white font-bold hover:bg-white hover:text-black transition-colors"
             >
               GET IN TOUCH
             </a>
