@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative px-6 overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative px-6 overflow-hidden bg-black text-white">
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
           <motion.div
@@ -88,6 +88,15 @@ const HeroSection = () => {
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
               />
+            </a>
+
+            <a
+              href="/assets/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-12 py-4 border-2 border-white font-bold hover:bg-white hover:text-black transition-colors"
+            >
+              VIEW RESUME
             </a>
 
             <a
