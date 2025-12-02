@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       subtitle: "Voice Call Application",
       description:
         "Real-time voice calling platform built with Flutter and Agora SDK. Features background calls, billing timers, and coin-based wallet system.",
-      tags: ["FLUTTER", "AGORA SDK", "FIREBASE", "BLOC"],
+      tags: ["FLUTTER & DART", "AGORA SDK", "FIREBASE", "Provider"],
       number: "01",
       links: [
         {
@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       subtitle: "Travel & Transport App",
       description:
         "Comprehensive booking platform with vendor dashboards, location APIs, and route management for seamless travel experiences.",
-      tags: ["FLUTTER", "MAPS API", "REST API", "PROVIDER"],
+      tags: ["FLUTTER & DART", "MAPS API", "REST API", "PROVIDER"],
       number: "02",
       links: [
         {
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
       subtitle: "Business Management",
       description:
         "Enterprise resource planning mobile application with real-time tax tracking, sales monitoring, invoice printing, and API synchronization.",
-      tags: ["FLUTTER", "REST API", "HIVE", "PDF GEN"],
+      tags: ["FLUTTER & DART", "REST API", "HIVE", "PDF GEN", "BLUETOOTH PRITING","NETWORK PRINTING"],
       number: "03",
       links: [],
     },
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
       subtitle: "Matrimony Platform",
       description:
         "Modern matrimony application featuring role-based authentication, real-time messaging, and location-based search functionality.",
-      tags: ["FLUTTER", "FIREBASE", "GETX", "MESSAGING"],
+      tags: ["FLUTTER & DART", "FIREBASE", "PROVIDER", "MESSAGING","LOCAL NOTIFICATION"],
       number: "04",
       links: [
         {
