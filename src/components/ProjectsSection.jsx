@@ -39,7 +39,12 @@ const ProjectsSection = () => {
         "Enterprise resource planning mobile application with real-time tax tracking, sales monitoring, invoice printing, and API synchronization.",
       tags: ["FLUTTER & DART", "REST API", "HIVE", "PDF GEN", "BLUETOOTH PRITING","NETWORK PRINTING"],
       number: "03",
-      links: [],
+      links: [
+         {
+          type: "On Going Project",
+          url: null
+        },
+      ],
     },
     {
       name: "HAPPY NIKAH",
@@ -117,25 +122,44 @@ const ProjectsSection = () => {
 
                     {project.links && project.links.length > 0 && (
                       <div className="flex flex-wrap gap-4">
-                        {project.links.map((link, j) => (
-                          <a
-                            key={j}
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group/link inline-flex items-center gap-2 px-6 py-3 border border-white hover:bg-white hover:text-black transition-all duration-300"
-                          >
-                            <span className="text-sm tracking-wider font-medium">
-                              {link.type === "ios"
-                                ? "APP STORE"
-                                : "PLAY STORE"}
+                        {project.links.map((link, j) => {
+                          const label =
+                            link.type === "ios"
+                              ? "APP STORE"
+                              : link.type === "android"
+                              ? "PLAY STORE"
+                              : link.type;
+
+                          return link.url ? (
+                            <a
+                              key={j}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="group/link inline-flex items-center gap-2 px-6 py-3 border border-white hover:bg-white hover:text-black transition-all duration-300"
+                            >
+                              <span className="text-sm tracking-wider font-medium">
+                                {label}
+                              </span>
+                              <ExternalLink
+                                size={16}
+                                className="group-hover/link:translate-x-1 transition-transform"
+                              />
+                            </a>
+                          ) : (
+                            <span
+                              key={j}
+                              role="button"
+                              aria-disabled="true"
+                              className="inline-flex items-center gap-2 px-6 py-3 border border-white text-gray-500 cursor-not-allowed opacity-60"
+                            >
+                              <span className="text-sm tracking-wider font-medium">
+                                {label}
+                              </span>
+                              <ExternalLink size={16} />
                             </span>
-                            <ExternalLink
-                              size={16}
-                              className="group-hover/link:translate-x-1 transition-transform"
-                            />
-                          </a>
-                        ))}
+                          );
+                        })}
                       </div>
                     )}
                   </div>
