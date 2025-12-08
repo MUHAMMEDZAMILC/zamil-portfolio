@@ -46,7 +46,7 @@ const App = () => {
       <HeroSectionNew />
       <AboutSection />
       <StatsSection />
-      <ExperienceSection />
+      <ExperienceSection />x
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
