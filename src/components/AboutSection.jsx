@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { FaMediumM } from 'react-icons/fa';
+
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState({
@@ -191,6 +193,15 @@ const AboutSection = () => {
                 >
                   <Mail size={20} />
                 </a>
+                <a
+  href="https://medium.com/@mzofficial049"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-12 h-12 border border-white flex items-center justify-center social-link"
+  aria-label="Medium Profile"
+>
+  <FaMediumM size={20} />
+</a>
               </div>
             </div>
           </div>
