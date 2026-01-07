@@ -67,7 +67,7 @@ const CountUp = ({ end, duration = 2, suffix = "", prefix = "", separator = "" }
 // Stats Section Component
 const StatsSection = () => {
   const stats = [
-    { number: "50000", label: "APP DOWNLOADS", suffix: "K+", prefix: "" },
+    { number: "50", label: "APP DOWNLOADS", suffix: "K+", prefix: "" },
     { number: "30", label: "LOAD TIME REDUCTION", suffix: "%", prefix: "" },
     { number: "10", label: "API INTEGRATIONS", suffix: "+", prefix: "" },
     { number: "99", label: "CRASH-FREE SESSIONS", suffix: "%", prefix: "" },
